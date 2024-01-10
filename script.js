@@ -1,18 +1,17 @@
-function indexOfIgnoreCase(str: string, subStr: string): number {
-    if (subStr.length === 0) {
+function indexOfIgnoreCase(s1, s2) {
+  // write your code here
+	if (s2.length === 0) {
         return 0; // If the substring is empty, return 0
     }
-    
-    const lowerCaseStr = str.toLowerCase();
-    const lowerCaseSubStr = subStr.toLowerCase();
-    
-    return lowerCaseStr.indexOf(lowerCaseSubStr);
+
+    const lowerCaseS1 = s1.toLowerCase();
+    const lowerCaseS2 = s2.toLowerCase();
+
+    return lowerCaseS1.indexOf(lowerCaseS2);
+	
 }
 
-
 // Please do not change the code below
-const str = prompt("Enter s1:");
-const subStr = prompt("Enter s2:");
-alert(indexOfIgnoreCase(str, subStr));
-
-
+const s1 = prompt("Enter s1:");
+const s2 = prompt("Enter s2:");
+alert(indexOfIgnoreCase(s1, s2));
